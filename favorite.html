@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="light">
+
+      <!-- Navbar -->
+    <nav class="navbar-container">
+        <div class="logo">Vanilia<span>Shop</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="search-box">
+            <input id="searchInput" type="text" placeholder="Search products...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+
+
+        <!--Profile icon -->
+        <a href="profile.html"></a>
+        <div class="profile-icons">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+
+        <!--favorite -->
+
+        <a href="favorite.html"  class="favorite-icon">
+            <i class="fa-solid fa-heart"></i>
+            <span class="favorite-count" id="favorite-count">0</span>
+        </a>
+
+            
+        <!-- Cart icon -->
+        <a href="cart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count" id="cart-count">0</span>
+        </a>
+
+        <!--dark mood -->
+        <div class="icon" id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+    </nav>
+
+
+    <!-- Welcome Modal -->
+      <div class="welcome-modal" id="welcomeModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal"><i class="fas fa-times"></i></button>
+            <div class="modal-icon"><i class="fas fa-glass-cheers"></i></div>
+            <h2 class="modal-title">Welcome to Vanillia Shop! 👋</h2>
+            <p class="modal-text">We are thrilled to have you here. We hope you find what you're looking for and that your experience with us is enjoyable and rewarding.</p>
+
+        
+            <button class="btn btn-primary" id="startExploring"><i class="fas fa-compass"></i> Let's Start</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+    <h1 class="page-title">Your Favorite Items</h1>
+    
+    <div id="favorites-items" > 
+        </div>
+</div>
+
+
+
+
+
+  <footer>
+        <div class="container">
+            <p>&copy; 2025 Vanilla Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+  <!-- Loading Spinner -->
+        <div id="loading-screen" class="spinner" style="display:none;">Loading...</div>
+   
+
+
+  <!-- JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="favorite.js"></script>
+
+    
+</html>
+
+
+
+
